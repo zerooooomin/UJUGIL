@@ -1,0 +1,54 @@
+branch
+
+merge
+
+를 배움
+
+
+메인이 있고 해드를 메인에 둔 상태에서
+git branch <name>
+을 통해 name 브랜치를 메인에 만듦.
+
+name.md 파일을 만들어 거기에 내가 추가를 하고 저장을 함
+git checkout <name>
+을 통해 naem 브랜치로 해드를 옮김.
+
+앞서 name.md에서 추가를 했으니
+git add .
+git commit -m 'commit 1'
+을 통해 추가하고 커밋을 한다
+
+git checkout main
+을 통해 해드를 메인으로 옮긴다.
+
+메인에서
+git branch를 통해 브랜치를 확인하다
+
+메인에 name 브랜치를 연결하기위해
+해드를 메인에 두고
+git merge <브랜치이름(name)>
+을 입력하여 메인에 추가
+
+메인이 바뀌었으니
+헤드를 메인에 두고
+git add .
+git commit -m '커밋메세지'
+를 하여 추가한다
+
+
+##여러명일때
+메인하나에 여러 브런치를 만들어 작업을 할때
+위의 방법과 동일하게 진행하되
+완성된 브랜치를 메인에 머지할때
+git pull을 통해 최신 파일로 초기화 시킨 이후
+메인에 가서 git merge 브랜치이름을 통해 
+추가를 하고 git push를 통해 마무리한다.
+
+
+
+origin << 원격(?) 이라고 생각하면 이해하기 편함?
+
+push를 하면 git hub에 origin/이름 으로 나타남
+
+
+
